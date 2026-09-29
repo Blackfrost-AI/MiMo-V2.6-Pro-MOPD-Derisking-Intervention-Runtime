@@ -1,0 +1,9 @@
+# Qualified environment snapshot; CUDA/GPU wheels are platform-specific.
+python==3.12
+sglang==0.5.19
+torch==2.13.0+cu130
+transformers @ git+https://github.com/huggingface/transformers.git@f324707307757d9c0b8dac1c4462eceff911fa2f
+flashinfer-python==0.6.18
+sglang-kernel==0.4.6.post1
+flash-attn-4==4.0.0b19
+triton==3.7.1

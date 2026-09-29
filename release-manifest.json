@@ -1,0 +1,55 @@
+{
+  "schema": "blackfrost.mimo_runtime_release.v1",
+  "release": "0.1.0",
+  "upstream_runtime": {
+    "name": "sglang",
+    "version": "0.5.19",
+    "commit": "0bcd822377da7b5718e674eaf9c870d349424dd1",
+    "wheel_sha256": {
+      "cp312_manylinux_x86_64": "fdc65d1235f6861ad3a1116c36c2270e46a95f030200091f8de595c6c3426cd2",
+      "cp312_manylinux_aarch64": "f32da6712a897ce94594ee1473bb14cc9b8cdf7702483e860aef8a3b74c488f2"
+    },
+    "license": "Apache-2.0",
+    "license_sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+  },
+  "tested_checkpoint": {
+    "repo": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+    "revision": "adea8e2c5373181e5a973fa1ecb343cb31af214b",
+    "hidden_size": 6144,
+    "tensor_parallel_size": 8
+  },
+  "direction_source": {
+    "repo": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+    "revision": "adea8e2c5373181e5a973fa1ecb343cb31af214b",
+    "hidden_size": 6144
+  },
+  "qualified_source_sha256": {
+    "sglang/srt/configs/model_config.py": "3a1e426311e289f20286358c84822ebaf3d478925f8739a2d2d6d6bd3257840e",
+    "sglang/srt/configs/qwen3_asr.py": "25dbc515527e5cc42490ebee476d382a458508d868dfe5a0113eafc603bc6088",
+    "sglang/srt/layers/quantization/fp8.py": "7cf0d3fae82307a55d3cb4ef237ed99e19f3aec47fa10aab3e1005e4d8fa2156",
+    "sglang/srt/layers/quantization/mxfp4_flashinfer_trtllm_moe.py": "2c050f57f7a860cd043b5980ee88adbbbabd46f04be489eccb18aa3d63137a57",
+    "sglang/srt/models/mimo_v2.py": "0250883f00696db512fb48d908f39ba714c4b35bc7c502b225100873052e8ff4",
+    "sglang/srt/models/mimo_vl.py": "858bf3259b7f993cbaff21179196361e1cec7338cf8c873a681407d1ee68d3f8"
+  },
+  "upstream_base_sha256": {
+    "sglang/srt/configs/model_config.py": "da8db3fd906bc4fdf412cd8cd2ea1787a3385a948bea41cbc66c6fd75664d6b7",
+    "sglang/srt/configs/qwen3_asr.py": "3ce79252169d974a777a3c7226d6a4186696143c0d1fd039f19249b10cd1d719",
+    "sglang/srt/layers/quantization/fp8.py": "02ee1f135dce58da751d6a45fbc810c92a0aeecab4545ba959cd9c6363f81eb5",
+    "sglang/srt/layers/quantization/mxfp4_flashinfer_trtllm_moe.py": "bd5632ff33036c318e095f9f936bb4be4d1a6e665ad9046cee1c77cc8b83695a",
+    "sglang/srt/models/mimo_v2.py": "f7a413a456e6567155b91ad479fa6ec42420f66b7dadd5449d0d45613a50a7c1",
+    "sglang/srt/models/mimo_vl.py": "0b365aafabc003b0a8bfc7617542e1ae7cbbc1ab2b32a13763c05fc69606f6d8"
+  },
+  "overrides": {
+    "overrides/sglang/srt/configs/model_config.py": "8a2d1af17e72b0768900b491c2d4de45fef6ba0b4a9c34b1d26b2bba55e80da3",
+    "overrides/sglang/srt/configs/qwen3_asr.py": "c997e0e90cbba714f26735ca5cecfa451f37e31336af2596cb1a4832b2406b51",
+    "overrides/sglang/srt/layers/quantization/fp8.py": "c5ec472375a266ca2c8b9a18c8423d8daa73a853206cf3ac72b5f86fb5a32f79",
+    "overrides/sglang/srt/layers/quantization/mxfp4_flashinfer_trtllm_moe.py": "f30149db1f35d2eaa2825bc490006e7ef4cb478e385554fd5484535b71e9027d",
+    "overrides/sglang/srt/models/mimo_v2.py": "ee203e5ebf8a17863191e89360e9c6d4432cdf136ea703217260ce5462da19d9",
+    "overrides/sglang/srt/models/mimo_vl.py": "f2bf8667556302d030564f046113fe238edd050a5a905a6d17c64964917ca38e"
+  },
+  "artifacts": {
+    "artifacts/pro-mopd-prompt32-pass2-lambda2/manifest.json": "00c835ccecc833db44aa9c5045a2b782fb562d279c13aa48b40030a809cca18d",
+    "artifacts/pro-mopd-prompt32-pass2-lambda2/directions/pass1-prompt32-layer038-post_layer_outputs.pt": "2056e0938fef9d2c408ff06a208d08c45fbe29ad57840ce07a93a01de1d53518",
+    "artifacts/pro-mopd-prompt32-pass2-lambda2/directions/pass2-prompt32-layer038-post_layer_outputs.pt": "ab4676bb941942f08cee323f702138a68b1730db13519aaa055b7b828eedbdb5"
+  }
+}

@@ -1,0 +1,22 @@
+Blackfrost MiMo SGLang Runtime
+Copyright 2026 Blackfrost AI
+
+This product includes modified source from SGLang version 0.5.19 (upstream
+commit 0bcd822377da7b5718e674eaf9c870d349424dd1), Copyright 2023-2024
+SGLang Team, licensed under the Apache License, Version 2.0.
+
+Blackfrost AI modified: sglang/srt/configs/model_config.py;
+sglang/srt/configs/qwen3_asr.py; sglang/srt/layers/quantization/fp8.py;
+sglang/srt/layers/quantization/mxfp4_flashinfer_trtllm_moe.py;
+sglang/srt/models/mimo_v2.py; sglang/srt/models/mimo_vl.py. These changes add
+MiMo-V2.6 native MXFP4 checkpoint loading, compatibility fixes, and an optional
+activation-direction runtime.
+
+The experimental method is derived from public work by Keys (drowzeys), with
+Pro-specific fitting, runtime integration, testing, and packaging by
+Blackfrost AI. This attribution does not imply endorsement.
+
+sglang/srt/layers/quantization/fp8.py retains its upstream notice that portions
+were adapted from vLLM v0.6.4.post1, licensed under Apache-2.0. SGLang, vLLM,
+Xiaomi, MiMo, and contributor names are names of their respective owners. No
+affiliation or endorsement is implied.
